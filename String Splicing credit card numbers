@@ -8,6 +8,9 @@ Enter the expiration date with two digits for the month
 and two digits for the year, as in 0921: 0123
 The last four digits of your number are 7878
 The card expiration date is 01/2023
+NOW USING:
+change card_num[4:]
+exp_date[2:4] + '/20' + exp_date[:-2]
 ''''
 
 card_num = input('Enter your credit card number: ')
