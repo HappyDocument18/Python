@@ -1,0 +1,15 @@
+''''
+This program takes a specific time from user input and displays it in a specified
+format. The code does not match the expected output as of now. Correct the errors
+to display the expected output.
+Sample Expected Output
+Enter the time in the format hours:minutes:seconds, as in
+16:30:42: 16:30:42
+You entered 16 hours, 30 minutes, and 42 seconds.
+''''
+
+time = input('Enter the time in the format hours'+
+             ':minutes:seconds, as in 16:30:42: ')
+print('You entered ' + time[0:2] +
+      ' hours ' + time[3:5] + ' minutes '
+       + time[6:] + ' seconds ')
