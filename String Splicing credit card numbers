@@ -1,0 +1,17 @@
+''''
+This program uses string splicing to extract the last four digits of a credit card
+number and to display the card's expiration date in the format specified. However,
+the display is not correct. Correct the errors to match the expected output.
+Expected Output
+Enter your credit card number: 1212343456567878
+Enter the expiration date with two digits for the month
+and two digits for the year, as in 0921: 0123
+The last four digits of your number are 7878
+The card expiration date is 01/2023
+''''
+
+card_num = input('Enter your credit card number: ')
+exp_date = input('Enter the expiration date with two digits for the month and 
+                  two digits for the year, as in 0921: ')
+print('The last four digits of your number are ' + card_num[-4: ])
+print('The card expiration date is ' + exp_date[0:2] + '/20' + exp_date[-2: ])
